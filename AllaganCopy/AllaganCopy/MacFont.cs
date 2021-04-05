@@ -38,9 +38,9 @@ namespace AllaganCopy
             exchanges.Add(Hash.Compute("font3.tex"), Hash.Compute("font_krn_3.tex"));
 
             // axis fonts.
-            exchanges.Add(Hash.Compute("axis_12.fdt"), Hash.Compute("KrnAxis_120.fdt"));
+            /*exchanges.Add(Hash.Compute("axis_12.fdt"), Hash.Compute("KrnAxis_120.fdt"));
             exchanges.Add(Hash.Compute("axis_14.fdt"), Hash.Compute("KrnAxis_140.fdt"));
-            exchanges.Add(Hash.Compute("axis_18.fdt"), Hash.Compute("KrnAxis_180.fdt"));
+            exchanges.Add(Hash.Compute("axis_18.fdt"), Hash.Compute("KrnAxis_180.fdt"));*/
 
             // pre-hash the key for common/font directory since it'll be frequently used.
             uint fontDirectoryKey = Hash.Compute("common/font");
