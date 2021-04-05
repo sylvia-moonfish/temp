@@ -48,10 +48,10 @@ namespace AllaganCopy
             exchanges.Add(Hash.Compute("miedingermid_12.fdt"), Hash.Compute("KrnAxis_180.fdt"));
             exchanges.Add(Hash.Compute("miedingermid_14.fdt"), Hash.Compute("KrnAxis_180.fdt"));
             exchanges.Add(Hash.Compute("miedingermid_18.fdt"), Hash.Compute("KrnAxis_180.fdt"));
-            /*
+            
             exchanges.Add(Hash.Compute("meidinger_16.fdt"), Hash.Compute("KrnAxis_180.fdt"));
             exchanges.Add(Hash.Compute("meidinger_20.fdt"), Hash.Compute("KrnAxis_180.fdt"));
-            */
+            
             // pre-hash the key for common/font directory since it'll be frequently used.
             uint fontDirectoryKey = Hash.Compute("common/font");
 
