@@ -1,11 +1,18 @@
-﻿################################################################################
+################################################################################
 # 이 .gitignore 파일은 Microsoft(R) Visual Studio에서 자동으로 만들어졌습니다.
 ################################################################################
 
+/.DS_Store
 /.vs
+/AllaganCopy/.DS_Store
 /AllaganCopy/.vs
 /AllaganCopy/AllaganCopy/bin
 /AllaganCopy/AllaganCopy/obj
+/MacPatcher/.DS_Store
 /MacPatcher/.vs
+/MacPatcher/MacPatcher/.DS_Store
 /MacPatcher/MacPatcher/bin
 /MacPatcher/MacPatcher/obj
+/MacPatcher/MacPatcherPackager/.DS_Store
+/MacPatcher/MacPatcherPackager/bin
+/MacPatcher/MacPatcherPackager/obj

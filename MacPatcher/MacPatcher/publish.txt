@@ -1,0 +1,1 @@
+﻿1. Navigate to MacPatcher.csproj then copy and paste the following: `dotnet publish -c Release -r osx-x64 -p:PublishSingleFile=true --self-contained true`
