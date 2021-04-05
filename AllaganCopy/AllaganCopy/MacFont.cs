@@ -38,9 +38,11 @@ namespace AllaganCopy
             exchanges.Add(Hash.Compute("font3.tex"), Hash.Compute("font_krn_3.tex"));
 
             // axis fonts.
-            /*exchanges.Add(Hash.Compute("axis_12.fdt"), Hash.Compute("KrnAxis_120.fdt"));
+            exchanges.Add(Hash.Compute("axis_12.fdt"), Hash.Compute("KrnAxis_120.fdt"));
             exchanges.Add(Hash.Compute("axis_14.fdt"), Hash.Compute("KrnAxis_140.fdt"));
-            exchanges.Add(Hash.Compute("axis_18.fdt"), Hash.Compute("KrnAxis_180.fdt"));*/
+            exchanges.Add(Hash.Compute("axis_18.fdt"), Hash.Compute("KrnAxis_180.fdt"));
+            exchanges.Add(Hash.Compute("axis_36.fdt"), Hash.Compute("KrnAxis_180.fdt"));
+            exchanges.Add(Hash.Compute("axis_96.fdt"), Hash.Compute("KrnAxis_180.fdt"));
 
             // pre-hash the key for common/font directory since it'll be frequently used.
             uint fontDirectoryKey = Hash.Compute("common/font");
@@ -51,7 +53,10 @@ namespace AllaganCopy
             // add all wanted korean keys to dictionary first for fast searching later.
             foreach (uint key in exchanges.Keys)
             {
-                koreanOffsets.Add(exchanges[key], 0);
+                if (!koreanOffsets.ContainsKey(exchanges[key]))
+                {
+                    koreanOffsets.Add(exchanges[key], 0);
+                }
             }
 
             // read korean index file as bytes.
